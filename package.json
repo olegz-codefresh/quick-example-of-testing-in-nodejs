@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha",
+    "test": "mocha --reporter mocha-allure-reporter --exit",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha --dir ./reports/coverage"
   },
   "author": "Alicia <alicia@aliciasykes.com> (http://aliciasykes.com)",
@@ -16,7 +16,13 @@
     "mocha": "^4.0.1",
     "mochawesome": "^3.0.0",
     "mockery": "^2.1.0",
-    "sinon": "^4.1.3"
+    "sinon": "^4.1.3",
+    "chai-http": "^4.3.0",
+    "allure-commandline": "^2.0.0",
+    "mocha-allure-reporter": "^1.2.0",
+    "mocha-multi": "^0.11.0",
+    "npm-run-all": "^4.0.2",
+    "webdriverio": "^4.8.0"
   },
   "dependencies": {
     "colors": "^1.1.2",
